@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Exp10.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            Master Page
+            <asp:TreeView ID="TreeView1" runat="server">
+                <Nodes>
+                    <asp:TreeNode Text="Login" NavigateUrl="~/WebForm1.aspx" Target="_blank"></asp:TreeNode>
+                    <asp:TreeNode Text="Register" NavigateUrl="~/WebForm2.aspx" Target="_blank"></asp:TreeNode>
+                </Nodes>
+            </asp:TreeView>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
